@@ -19,6 +19,9 @@ Data från SNQ
 ---
 
 # Döda totalt efter att ha fötts i Malmö och Lund
+---
+layout: two-cols
+---
 
 | stad  | <72h  | n  |
 |-------|-------|----|
@@ -26,6 +29,8 @@ Data från SNQ
 | Lund  | tidig |  6 |
 | Malmö | sen |  2 |
 | Malmö | tidig |  4 |
+
+::right::
 
 ```mermaid
 flowchart TD
@@ -40,13 +45,29 @@ flowchart TD
 ---
 
 # Jämfört med antal levande födda
+---
+layout: two-cols
+---
 
 | Förlossning | <72h |    n | Levande_födda |     mort |
 |--------|-----------------------|------|---------------|----------|
-| Lund   | FALSE                 |   10 |          3290 | 0.00304  |
-| Lund   | TRUE                  |    6 |          3290 | 0.00182  |
+| Lund   | FALSE                 |   9 |          3290 | 0.00274  |
+| Lund   | TRUE                  |    7 |          3290 | 0.00213  |
 | Malmö  | FALSE                 |    2 |          4682 | 0.000427 |
 | Malmö  | TRUE                  |    4 |          4682 | 0.000854 |
+
+::right::
+
+```mermaid
+flowchart TD
+    A[22 döda / 7972 födda] -->|16 / 3290| B[Lund]
+    A -->|6 / 4682| C[Malmö]
+    B -->|9 = 0,3%| F[<1v]
+    B -->|6 = 0,2%| G[>1v]
+    C -->|2 = 0,04%| D[<1v]
+    C -->|4 = 0,09%| E[>1v]
+```
+
 
 ---
 
@@ -60,15 +81,30 @@ flowchart TD
 
 ---
 
-Jämfört med antal levande födda
-
 # Olika GV
+---
+layout: two-cols
+---
 
 | grupp          | Lund | Malmö |
 |----------------|------|-------|
 | xprem          |  11  |     2 |
 | lättprem       |   4  |     3 |
 | fullgången     |   1  |     1 |
+
+::right::
+
+```mermaid
+flowchart TD
+    A[22 döda] -->|16| B[Lund]
+    A -->|6| C[Malmö]
+    B -->|11| F[<28GV]
+    B -->|4| G[28-36GV]
+    B -->|1| H[>36GV]
+    C -->|2| D[<28GV]
+    C -->|4| E[28-36GV]
+    C -->|1| I[>36GV]
+```
 
 ---
 
