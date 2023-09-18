@@ -16,17 +16,15 @@ mdc: true
 
 Data från SNQ
 
----
 
-# Döda totalt efter att ha fötts i Malmö och Lund
 ---
 layout: two-cols
 ---
 
-| stad  | <72h  | n  |
+| stad  | <1v  | n  |
 |-------|-------|----|
-| Lund  | sen | 10 |
-| Lund  | tidig |  6 |
+| Lund  | sen | 9 |
+| Lund  | tidig |  7 |
 | Malmö | sen |  2 |
 | Malmö | tidig |  4 |
 
@@ -36,20 +34,17 @@ layout: two-cols
 flowchart TD
     A[22 döda] -->|16| B[Lund]
     A -->|6| C[Malmö]
-    B -->|10| F[<72h]
-    B -->|6| G[>72h]
-    C -->|2| D[<72h]
-    C -->|4| E[>72h]
+    B -->|9| F[<1v]
+    B -->|7| G[>1v]
+    C -->|2| D[<1v]
+    C -->|4| E[>1v]
 ```
 
----
-
-# Jämfört med antal levande födda
 ---
 layout: two-cols
 ---
 
-| Förlossning | <72h |    n | Levande_födda |     mort |
+| Förlossning | <1v |    n | Levande_födda |     mort |
 |--------|-----------------------|------|---------------|----------|
 | Lund   | FALSE                 |   9 |          3290 | 0.00274  |
 | Lund   | TRUE                  |    7 |          3290 | 0.00213  |
@@ -71,7 +66,6 @@ flowchart TD
 
 ---
 
-# Jämfört med tidigare år
 
 | fenhet | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |--------|------|------|------|------|------|------|
@@ -79,9 +73,7 @@ flowchart TD
 |  Malmö |    3 |    2 |    3 |    7 |    4 |    6 |
 |  Total |   20 |   21 |   19 |   29 |   20 |   22 |
 
----
 
-# Olika GV
 ---
 layout: two-cols
 ---
@@ -103,45 +95,42 @@ flowchart TD
     B -->|1| H[>36GV]
     C -->|2| D[<28GV]
     C -->|4| E[28-36GV]
-    C -->|1| I[>36GV]
+    C -->|1| I[>37GV]
 ```
 
 ---
-
-# Dödsorsaker 2022
-
-| gv_kat     | problem                                           | 
-|------------|---------------------------------------------------|
-| xprem      | xxprem,RDS,PPHN                                   |
-| xprem      | svårt syresätta trots max inst                    |
-| xprem      | RDS, PPHN                                         |
-| xprem      | tv dog iu, denna PPHN RDS                         |
-| xprem      | flöde gr4, tarmischemi, NEC                       |
-| xprem      | NEC, sepsis                                       |
-| xprem      | NEC                                               |
-| xprem      | RDS, PPHN                                         |
-| xprem      | ablatio, asfyxi                                   |
-| xprem      | CA, vtn, RDS, NEC, perf                           |
-| xprem      | IUGR, flö, NEC, hjärttamponad                     |
-| xprem      | RDS BPD                                           |
-| xprem      | tri9mosaik(80%)                                   |
-| lättprem   | arcushypoplasi, trakeaagenesi, kotmissb           |
-| lättprem   | fetomaternell blödning                            |
-| lättprem   | neural tube defect                                |
-| lättprem   | RDS                                               |
-| lättprem   | SGA, PDA, NEC                                     |
-| lättprem   | nemalinmyopati                                    |
-| lättprem   | mult missb (TGA, trakeoesofagal fistel) hjärnblöd |
-| fullgången | trisomi 18                                        |
-| fullgången | asfyxi                                            |  
-
+layout: two-cols
 ---
 
-# Diskrepans mellan SNQ och Gravditetsregistret
+<28gv                                             
+1. xxprem,RDS,PPHN
+2. svårt syresätta trots max inst                 
+3. RDS, PPHN                                      
+4. tv dog iu, denna PPHN RDS                      
+5. flöde gr4, tarmischemi, NEC                    
+6. NEC, sepsis                                    
+7. NEC                                            
+8. RDS, PPHN                                      
+9. ablatio, asfyxi                                
+10. CA, vtn, RDS, NEC, perf                       
+11. IUGR, flö, NEC, hjärttamponad                 
+12. RDS BPD                                       
+13. tri9mosaik(80%)                               
 
----
+::right::
 
-Antal dödfödda
+28-36gv                                           
+1. arcushypoplasi, trakeaagenesi, kotmissb           
+2. fetomaternell blödning                            
+3. neural tube defect                                
+4. RDS                                               
+5. SGA, PDA, NEC                                     
+6. nemalinmyopati                                    
+7. mult missb (TGA, trakeoesofagal fistel) hjärnblöd 
+
+fullgångna                                             
+1. trisomi 18                                        
+2. asfyxi                                              
 
 ---
 
