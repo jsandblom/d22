@@ -10,5 +10,6 @@
     "@slidev/cli": "^0.43.4",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest"
-  }
+  },
+  "version": "0.0.0"
 }
