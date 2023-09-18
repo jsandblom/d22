@@ -143,7 +143,9 @@ fullgångna
 
 ---
 
-# Tomt
+# Frågor
+
+1. går det att göra bättre i gruppen 28-36gv med tanke på att där var mycket genetik? Har de följts och upptäckts på MVC? Kunde de ha hittats? Ge personnummer till Jana Brodszki.
 
 ---
 
