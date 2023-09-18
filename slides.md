@@ -36,10 +36,10 @@ layout: two-cols
 flowchart TD
     A[22 döda] -->|16| B[Lund]
     A -->|6| C[Malmö]
-    B -->|9| F[<1v]
-    B -->|7| G[>1v]
-    C -->|2| D[<1v]
-    C -->|4| E[>1v]
+    B -->|9| F[<7d]
+    B -->|7| G[>7d]
+    C -->|2| D[<7d]
+    C -->|4| E[>7d]
 ```
 
 ---
@@ -48,12 +48,12 @@ layout: two-cols
 
 # Per levande födda
 
-| Förlossning | <1v |    n | Levande_födda |     mort |
+| Förlossning | <7d |    n | Levande_födda |     mort |
 |--------|-----------------------|------|---------------|----------|
-| Lund   | FALSE                 |   9 |          3290 | 0.00274  |
-| Lund   | TRUE                  |    7 |          3290 | 0.00213  |
-| Malmö  | FALSE                 |    2 |          4682 | 0.000427 |
-| Malmö  | TRUE                  |    4 |          4682 | 0.000854 |
+| Lund   | >7d                 |   9 |          3290 | 0.00274  |
+| Lund   | <7d                  |    7 |          3290 | 0.00213  |
+| Malmö  | >7d                 |    2 |          4682 | 0.000427 |
+| Malmö  | <7d                  |    4 |          4682 | 0.000854 |
 
 ::right::
 
@@ -61,10 +61,10 @@ layout: two-cols
 flowchart TD
     A[22 döda / 7972 födda] -->|16 / 3290| B[Lund]
     A -->|6 / 4682| C[Malmö]
-    B -->|9 = 0,3%| F[<1v]
-    B -->|6 = 0,2%| G[>1v]
-    C -->|2 = 0,04%| D[<1v]
-    C -->|4 = 0,09%| E[>1v]
+    B -->|9 = 0,3%| F[<7d]
+    B -->|6 = 0,2%| G[>7d]
+    C -->|2 = 0,04%| D[<7d]
+    C -->|4 = 0,09%| E[>7d]
 ```
 
 
@@ -72,7 +72,7 @@ flowchart TD
 
 # Jämfört med tidigare år
 
-| fenhet | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
+| förlossning | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |--------|------|------|------|------|------|------|
 |   Lund |   17 |   19 |   16 |   22 |   16 |   16 |
 |  Malmö |    3 |    2 |    3 |    7 |    4 |    6 |
@@ -112,34 +112,34 @@ layout: two-cols
 # Dödsorsaker
 
 <28gv                                             
-1. xxprem,RDS,PPHN
-2. svårt syresätta trots max inst                 
-3. RDS, PPHN                                      
-4. tv dog iu, denna PPHN RDS                      
-5. flöde gr4, tarmischemi, NEC                    
-6. NEC, sepsis                                    
-7. NEC                                            
-8. RDS, PPHN                                      
-9. ablatio, asfyxi                                
-10. CA, vtn, RDS, NEC, perf                       
-11. IUGR, flö, NEC, hjärttamponad                 
-12. RDS BPD                                       
-13. tri9mosaik(80%)                               
+1. 0d, Malmö, 22v, RDS, PPHN
+2. 0d, Lund, svårt syresätta trots max inst                 
+3. 0d, Lund, RDS, PPHN                                      
+4. 1d, Lund, tv dog iu, denna PPHN RDS                      
+5. 2d, Lund, flöde gr4, tarmischemi, NEC                    
+6. 6d, Lund, NEC, sepsis                                    
+7. 8d, Lund, NEC                                            
+8. 7d, Lund, RDS, PPHN                                      
+9. 9d, Malmö, ablatio, asfyxi                                
+10. 12d, Lund, CA, vtn, RDS, NEC, perf                       
+11. 12d, Lund, IUGR, flö, NEC, hjärttamponad                 
+12. 66d, Lund, RDS BPD                                       
+13. 67d, Lund, tri9mosaik(80%)                               
 
 ::right::
 
 28-36gv                                           
-1. arcushypoplasi, trakeaagenesi, kotmissb           
-2. fetomaternell blödning                            
-3. neural tube defect                                
-4. RDS                                               
-5. SGA, PDA, NEC                                     
-6. nemalinmyopati                                    
-7. mult missb (TGA, trakeoesofagal fistel) hjärnblöd 
+1. 0d, Lund, arcushypoplasi, trakeaagenesi, kotmissb           
+2. 0d, Malmö, fetomaternell blödning                            
+3. 0d, Lund, neural tube defect                                
+4. 0d, Malmö, RDS                                               
+5. 19d, Lund, SGA, PDA, NEC                                     
+6. 27d, Malmö, nemalinmyopati                                   
+7. 31d, Lund, mult missb (TGA, trakeoesofagal fistel) hjärnblöd 
 
 fullgångna                                             
-1. trisomi 18                                        
-2. asfyxi                                              
+1. 2d, Malmö, trisomi 18                                        
+2. 15d, Lund, asfyxi                                              
 
 ---
 
