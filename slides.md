@@ -27,6 +27,16 @@ Data från SNQ
 | Malmö | sen |  2 |
 | Malmö | tidig |  4 |
 
+```mermaid
+flowchart TD
+    A[22 döda] -->|16| B[Lund]
+    A -->|6| C[Malmö]
+    B -->|10| F[<72h]
+    B -->|6| G[>72h]
+    C -->|2| D[<72h]
+    C -->|4| E[>72h]
+```
+
 ---
 
 # Jämfört med antal levande födda
@@ -44,9 +54,9 @@ Data från SNQ
 
 | fenhet | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |--------|------|------|------|------|------|------|
-|   Lund |   17 |   19 |   16 |   22 |   16 |   15 |
+|   Lund |   17 |   19 |   16 |   22 |   16 |   16 |
 |  Malmö |    3 |    2 |    3 |    7 |    4 |    6 |
-|  Total |   20 |   21 |   19 |   29 |   20 |   21 |
+|  Total |   20 |   21 |   19 |   29 |   20 |   22 |
 
 ---
 
@@ -54,9 +64,40 @@ Jämfört med antal levande födda
 
 # Olika GV
 
+| grupp          | Lund | Malmö |
+|----------------|------|-------|
+| xprem          |  11  |     2 |
+| lättprem       |   4  |     3 |
+| fullgången     |   1  |     1 |
+
 ---
 
 # Dödsorsaker 2022
+
+| gv_kat     | problem                                           | 
+|------------|---------------------------------------------------|
+| xprem      | xxprem,RDS,PPHN                                   |
+| xprem      | svårt syresätta trots max inst                    |
+| xprem      | RDS, PPHN                                         |
+| xprem      | tv dog iu, denna PPHN RDS                         |
+| xprem      | flöde gr4, tarmischemi, NEC                       |
+| xprem      | NEC, sepsis                                       |
+| xprem      | NEC                                               |
+| xprem      | RDS, PPHN                                         |
+| xprem      | ablatio, asfyxi                                   |
+| xprem      | CA, vtn, RDS, NEC, perf                           |
+| xprem      | IUGR, flö, NEC, hjärttamponad                     |
+| xprem      | RDS BPD                                           |
+| xprem      | tri9mosaik(80%)                                   |
+| lättprem   | arcushypoplasi, trakeaagenesi, kotmissb           |
+| lättprem   | fetomaternell blödning                            |
+| lättprem   | neural tube defect                                |
+| lättprem   | RDS                                               |
+| lättprem   | SGA, PDA, NEC                                     |
+| lättprem   | nemalinmyopati                                    |
+| lättprem   | mult missb (TGA, trakeoesofagal fistel) hjärnblöd |
+| fullgången | trisomi 18                                        |
+| fullgången | asfyxi                                            |  
 
 ---
 
