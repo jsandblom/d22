@@ -21,6 +21,8 @@ Data från SNQ
 layout: two-cols
 ---
 
+# Fördelning Malmö / Lund
+
 | stad  | <1v  | n  |
 |-------|-------|----|
 | Lund  | sen | 9 |
@@ -44,6 +46,8 @@ flowchart TD
 layout: two-cols
 ---
 
+# Per levande födda
+
 | Förlossning | <1v |    n | Levande_födda |     mort |
 |--------|-----------------------|------|---------------|----------|
 | Lund   | FALSE                 |   9 |          3290 | 0.00274  |
@@ -66,6 +70,7 @@ flowchart TD
 
 ---
 
+# Jämfört med tidigare år
 
 | fenhet | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |--------|------|------|------|------|------|------|
@@ -78,10 +83,12 @@ flowchart TD
 layout: two-cols
 ---
 
+# Prematuritet
+
 | grupp          | Lund | Malmö |
 |----------------|------|-------|
-| xprem          |  11  |     2 |
-| lättprem       |   4  |     3 |
+| < 28 gv        |  11  |     2 |
+| 28 - 36 gv     |   4  |     3 |
 | fullgången     |   1  |     1 |
 
 ::right::
@@ -90,17 +97,19 @@ layout: two-cols
 flowchart TD
     A[22 döda] -->|16| B[Lund]
     A -->|6| C[Malmö]
-    B -->|11| F[<28GV]
-    B -->|4| G[28-36GV]
-    B -->|1| H[>36GV]
-    C -->|2| D[<28GV]
-    C -->|4| E[28-36GV]
-    C -->|1| I[>37GV]
+    B -->|11| F[<28gv]
+    B -->|4| G[28-36gv]
+    B -->|1| H[fullgången]
+    C -->|2| D[<28Ggv]
+    C -->|4| E[28-36gv]
+    C -->|1| I[fullgången]
 ```
 
 ---
 layout: two-cols
 ---
+
+# Dödsorsaker
 
 <28gv                                             
 1. xxprem,RDS,PPHN
